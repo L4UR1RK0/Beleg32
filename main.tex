@@ -1,0 +1,29 @@
+\documentclass[first=Laurence,last=Kolbe,company= SAP \space SE,location=Dresden,simple]{baarticle}
+
+\input{imports.tex}
+\input{settings.tex}
+\input{bibressources.tex} %alle Quellenbibliotheken in bibressources.tex zusammengefasst /
+                          %/ erscheint im Inhaltverzeichnis unter "Literatur" insofern mindestens 1 Quelle als Zitat/Vergleich in der Arbeit benutzt wurde
+                          % nur benutzte Quellen erscheinen dann im Literaturverzeichnis egal wie viele im Dokument angelegt wurden
+\input{acronyms.tex}    %verhält sich wie mit den Quellen, erscheint dann unter Abkürzungsverzeichnis
+
+\begin{document}
+\begin{basimple}[
+        img=./graphics/ba.jpg,
+        course=Wirtschaftsinformatik,
+        title=Titel,
+        number=3004951,
+        corrector={name korrekteur},
+        themedate=01. Januar 2000,
+        returndate=01. Januar 2000,
+        signature=./graphics/signature.png,
+        location=Dresden,
+        type=report,
+    ]
+
+    \include{chapters/intro/content.tex}
+    \include{chapters/chapter01/content.tex}
+    \include{chapters/appendix/content.tex}
+
+\end{basimple}
+\end{document}

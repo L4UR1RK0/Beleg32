@@ -1,0 +1,62 @@
+% Sektion
+\section{Sektion}
+
+% Subsektion
+\subsection{Untersektion}
+Ich bin die Untersekton der Sektion
+
+% Liste
+\begin{itemize}
+    \item Hallo,
+    \item Ich bin eine Liste,
+    \item und habe 3 Punkte.
+\end{itemize}
+
+% Subsubsektion
+\subsubsection{Unteruntersektion}
+Ich bin eine Untersektion der Untersektion
+
+% Bild einfügen 
+\begin{bafigure}
+    [placement = h!, source = https://google.com]
+    {Bildunterschrift}        
+    \includegraphics[width=10cm]{./graphics/ba.png}    
+\end{bafigure}
+
+% Formel
+\begin{equation*}
+    P(A|B) = \frac{P(B|A) * P(A)}{P(B)}
+\end{equation*}
+Die verbaliserte Formel des Satz von Bayes lautet:
+\begin{equation*}
+    A~posteriori = \frac{Likelihood * A~priori}{Evidence}
+\end{equation*}
+
+% Beispiel für mathematische Ausdrücle in Text
+% \textit{} = kursiver Text
+Die Wahrscheinlichkeit $P(A|B)$, dass Event $A$ eintritt, wenn Event $B$ bereits eingetreten ist,
+wird als \textit{a posteriori} bezeichnet. Die Likelihood $P(B|A)$ ist die Wahrscheinlichkeit,
+dass Event $B$ eintritt, wenn Event $A$ bereits eingetreten ist.
+Die \textit{a priori} $P(A)$ ist die Wahrscheinlichkeit ohne zusätzliche Informationen,
+dass Event $A$ eintritt. Die Evidence $P(B)$ ist die Wahrscheinlichkeit,
+dass Event $B$ eintritt.
+
+
+
+$\vec{x}$ %Vektor
+
+Wort $x_i$ in einem Dokument der Klasse $y$ vorkommt, dar.\vglcite{manning2008introduction} %Zitat mit Zitatreferenz in Klammern
+
+
+% komplexere Formeln
+\begin{equation}
+    \operatorname{log}(P(y|x_1, ..., x_n))\propto{}\operatorname{log}(P(y)*\prod_{i=1}^{n}P(x_i|y)^{t_i})
+\end{equation}
+
+Durch das Anwenden der Logarithmus-Rechenregeln, $\operatorname{log}(x^n) = n*\operatorname{log}(x)$ und $\operatorname{log}(x*y)=\operatorname{log}(x)+\operatorname{log}(y)$, ergibt sich folgende Formel:
+
+\begin{equation}
+    \operatorname{log}(P(y|x_1, ..., x_n))\propto{}\operatorname{log}(P(y))+\sum_{i=1}^{n}{t_i}*\operatorname{log}(P(x_i|y))
+\end{equation}
+
+\clearpage % Rest der Seite frei lassen
